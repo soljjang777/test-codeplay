@@ -2,16 +2,19 @@ version: 0.0
 os: linux
 
 files:
-  - source: app/app.jar
-    destination: /opt/app
+  - source: /
+    destination: /home/ubuntu/app
     overwrite: true
 
 permissions:
-  - object: /opt/app
+  - object: /home/ubuntu/app
     pattern: "**"
     owner: ubuntu
     group: ubuntu
-    mode: "755"
+    mode: 755
+    type:
+      - file
+      - directory
 
 hooks:
   ApplicationStop:
