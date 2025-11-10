@@ -6,7 +6,7 @@ APP_DIR="${APP_DIR:-/home/ubuntu/app}"
 LOG_DIR="${LOG_DIR:-/home/ubuntu/app/logs}"
 PID_FILE="${PID_FILE:-/home/ubuntu/app/app.pid}"
 
-APP_PORT="${APP_PORT:-8081}"                 # Spring Boot 서버 포트
+APP_PORT="${APP_PORT:-8080}"                 # Spring Boot 서버 포트
 SPRING_PROFILE="${SPRING_PROFILE:-dev}"      # Spring profile
 JAVA_OPTS="${JAVA_OPTS:--Xms512m -Xmx1024m}" # JVM 옵션 (원하면 조정)
 JAR_NAME="${JAR_NAME:-}"                     # 특정 JAR를 지정하고 싶으면 값 지정
